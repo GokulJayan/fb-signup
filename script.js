@@ -1,0 +1,21 @@
+$(document).ready(function()
+{
+    $("#signupform").validate({
+        
+        rules:
+        {
+            fname:
+            {
+                minlength:3
+            },
+            sname:
+            {
+                minlength:1
+            },
+            email:
+            {
+                email:true
+            }            
+        }
+    })
+})
